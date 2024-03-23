@@ -1,0 +1,108 @@
+
+<nav class="nav-container dashboard-nav">
+    <div class="users">
+        <div id="dashboard-logo">CitiSoft</div>
+        <div class="users users-alt">
+            <!-- <a href="#" style="color: #1a2f80;">Dashboard</a>
+            <a href="#" >Cart</a>
+            <input type="search"> -->
+        </div>
+    </div>
+   
+<input type="checkbox" id="notificationcheckbox"  hidden >
+   
+   <div class="nav-buttons-container" >
+    <div>
+        <a href="#" class="dashboard-nav-link" onclick="setNotification()">
+            <div><img src="icons/notification-02.svg"></div>
+            <div>Notification</div>     
+
+        </a>
+    </div>
+    <div>
+        <!-- <a href="cart-filled.html" class="dashboard-nav-link">
+            <div><img src="images/cart.svg"></div>
+            <div>Cart</div>     
+        </a> -->
+    </div>
+    
+   </div>
+
+</nav>
+
+<div id="notifcontainer" hidden>
+    <div class="rownotifc1" >
+        <div class="colnotifc rownotifc" >
+            <img src="icons/notification-coloured.svg" width="32px" style="margin-right: 7px;" >
+        </div>
+        <div class="colnotifc ">
+          
+           <div class=" rownotifc" >
+                
+             <div class=" colnotifc" style="font-family: Roboto; font-size: 14px; font-weight: bold;">Vendor Notification</div>
+             <div class="colnotifc"style="">
+               3m
+             </div>
+         </div>
+          
+         <div style="width: 98%;">
+            <span style="font-size: smaller;"> A Vendor just completed sign up. Click to activate vendor.</span>
+         </div>
+        </div>
+    </div>
+    <div class="rownotifc1" >
+        <div class="colnotifc rownotifc" >
+            <img src="icons/notification-coloured.svg" width="32px" style="margin-right: 7px;" >
+        </div>
+        <div class="colnotifc ">
+          
+           <div class=" rownotifc" >
+                
+             <div class=" colnotifc" style="font-family: Roboto; font-size: 14px; font-weight: bold;">Vendor Notification</div>
+             <div class="colnotifc"style="">
+               3m
+             </div>
+         </div>
+          
+         <div style="width: 98%;">
+            <span style="font-size: smaller;"> A Vendor just completed sign up. Click to activate vendor.</span>
+         </div>
+        </div>
+    </div>
+    <div class="rownotifc1" >
+        <div class="colnotifc rownotifc" >
+            <img src="icons/notification-coloured.svg" width="32px" style="margin-right: 7px;" >
+        </div>
+        <div class="colnotifc ">
+          
+           <div class=" rownotifc" >
+                
+             <div class=" colnotifc" style="font-family: Roboto; font-size: 14px; font-weight: bold;">Vendor Notification</div>
+             <div class="colnotifc"style="">
+               3m
+             </div>
+         </div>
+          
+         <div style="width: 98%;">
+            <span style="font-size: smaller;"> A Vendor just completed sign up. Click to activate vendor.</span>
+         </div>
+        </div>
+    </div>
+</div>
+<script>
+function setNotification(){
+    var remember = document.getElementById("notificationcheckbox");
+
+
+    var container = document.getElementById('notifcontainer');
+
+  if (remember.checked) {
+    remember.removeAttribute('checked')
+   
+    container.setAttribute('hidden',true)
+  } else {
+    remember.setAttribute('checked',true)
+    container.removeAttribute('hidden')
+  }
+}
+</script>

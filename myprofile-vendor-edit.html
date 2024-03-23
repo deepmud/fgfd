@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CitiSoft</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        
+      {{header}}
+        <div class="content-alt" style="height:100vh;">
+            {{sidebar}}
+                  <div class="dashboard-main">
+                    <div class="product-history-top">
+                       <div class="heading">My Profile</div>
+                      
+                    </div>
+                    <div class="profile-container">
+                        <div class="top">
+                            <div class="info">Company Information</div>
+                            <a href="myprofile-vendor.html?id=1" class="edit">Cancel</a>
+                        </div>
+                        <form action="myprofile-vendor-edit.html" method="post">
+                        <div class="profile-form"> 
+                            <input id="companyname" type="text"  placeholder="abc" name="id"   value="{{id}}"  class="form-input" hidden> 
+                            <div class="profile-double-field">
+                                <div class="double-form-field-container">
+                                    <label for="companyname" class="profile-label">Company Name</label>
+                                    <input id="companyname" type="text"  placeholder="abc" name="companyname"   value="{{companyname}}"  class="form-input"> 
+                                </div>
+                                <div class="double-form-field-container">
+                                    <label for="repname" class="profile-label">Company Representative</label>
+                                    <input id="repname" type="text" placeholder="john doe"  name="repname"  value="{{repname}}"  class="form-input"> 
+                                </div> 
+                            </div>
+                            <div class="double-form-field-container single">
+                                <label for="companyemail" class="profile-label">Company Email</label>
+                                <input id="companyemail" type="email"   name="companyemail"  value="{{companyemail}}"   placeholder="abc@gmail.com" class="form-input"> 
+                            </div>
+                            <div class="double-form-field-container single">
+                                <label for="website" class="profile-label">Company Website</label>
+                                <input id="website" type="text"  name="website"  value="{{website}}"   placeholder="https://www.abc.com" class="form-input"> 
+                            </div>
+                            <div class="double-form-field-container single">
+                                <label for="established" class="profile-label">Year Established</label>
+                                <input id="established" type="text"  name="established"  value="{{established}}"   placeholder="2017" class="form-input"> 
+                            </div>
+                            <div class="double-form-field-container single">
+                                <label for="countries" class="profile-label">Location Countries</label>
+                                <input id="countries" type="text" placeholder="United Kingdom" name="countries"   value="{{countries}}"  class="form-input"> 
+                            </div>
+                            <div class="double-form-field-container single">
+                                <label for="cities" class="profile-label">Location Cities</label>
+                                <input id="cities" type="text" name="cities"   value="{{cities}}"   placeholder="lancastire" class="form-input"> 
+                            </div>
+                          
+                            <div class="profile-double-field2">
+                                <div class="double-form-field-container">
+                                    <label for="phone" class="profile-label">Contact Telephone Number</label>
+                                    <input id="phone" type="text" placeholder="+33 65445 5645" name="phone"   value="{{phone}}"  class="form-input"> 
+                                </div>
+                                <div class="double-form-field-container">
+                                    <label for="employees" class="profile-label">Number Of Employes</label>
+                                    <input id="employees" type="number" placeholder="10"  name="employees"     value="{{employees}}"  class="form-input"> 
+                                </div> 
+                            </div>
+                            <div class="double-form-field-container single">
+                                <label for="address" class="profile-label">Address</label>
+                                <input id="address" type="text"  name="address"  value="{{address}}"   placeholder="5 avenue" class="form-input"> 
+                            </div>
+                            <div class="double-form-field-container single">
+                                <label for="description" class="profile-label">Brief Description</label>
+                                <textarea id="description" style="height:150px; margin-top:10px;" name="description"    placeholder="Describe your company" class="form-input">{{description}}</textarea> 
+                            </div>
+                            <div style="display: flex; gap: 15px;">
+                                <a href="myprofile-vendor.html?id=1" class="plain-btn">Cancel</a>
+                                <button type="submit" class="plain-btn colored">Save</button>
+                            </div> 
+                        </div>
+                    </form>
+                    </div>
+                   
+                  </div>
+                  
+        </div>  
+    </div>    
+</body>
+</html> 
